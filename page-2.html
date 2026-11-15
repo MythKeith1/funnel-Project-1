@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tell NEXORA about your business, challenges and growth objectives. Begin your business growth consultation journey.">
+  <meta name="theme-color" content="#101820">
+
+  <title>Business Discovery | NEXORA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="page-2.css">
+  <script src="page-2.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="discovery-header">
+    <nav class="discovery-nav container">
+
+      <a href="index.html" class="logo">
+        NEXORA<span>.</span>
+      </a>
+
+      <div class="header-status">
+        <span class="secure-dot"></span>
+        BUSINESS DISCOVERY
+      </div>
+
+      <a href="index.html" class="exit-link">
+        ← Back to Home
+      </a>
+
+    </nav>
+  </header>
+
+
+  <main class="discovery-main">
+
+    <div class="container discovery-layout">
+
+      <!-- INTRODUCTION -->
+
+      <aside class="discovery-sidebar">
+
+        <span class="section-label">YOUR GROWTH JOURNEY / 02</span>
+
+        <h1>
+          Every great
+          <span>move begins</span>
+          with clarity.
+        </h1>
+
+        <p>
+          Tell us a little about your business, where you are
+          today and where you want to go.
+        </p>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-points">
+
+          <div class="sidebar-point">
+            <span>01</span>
+            <div>
+              <strong>Understand</strong>
+              <small>Get to know your business.</small>
+            </div>
+          </div>
+
+          <div class="sidebar-point">
+            <span>02</span>
+            <div>
+              <strong>Identify</strong>
+              <small>Discover your growth priorities.</small>
+            </div>
+          </div>
+
+          <div class="sidebar-point">
+            <span>03</span>
+            <div>
+              <strong>Prepare</strong>
+              <small>Move towards a focused consultation.</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="sidebar-note">
+          <span>✳</span>
+          <p>
+            Your answers help us understand your requirements
+            before the next stage.
+          </p>
+        </div>
+
+      </aside>
+
+
+      <!-- FORM AREA -->
+
+      <section class="form-panel" aria-labelledby="formTitle">
+
+        <div class="form-top">
+
+          <div>
+            <span class="form-kicker">NEXORA / CLIENT DISCOVERY</span>
+            <h2 id="formTitle">Let's understand your business.</h2>
+            <p>Complete the four short sections below.</p>
+          </div>
+
+          <span class="step-indicator" id="stepIndicator">
+            01 / 04
+          </span>
+
+        </div>
+
+
+        <!-- PROGRESS -->
+
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-label="Form progress"
+          aria-valuemin="1"
+          aria-valuemax="4"
+          aria-valuenow="1"
+          id="progressTrack">
+
+          <div class="progress-fill" id="progressFill"></div>
+
+        </div>
+
+        <div class="progress-labels">
+          <span>Business</span>
+          <span>Industry</span>
+          <span>Objectives</span>
+          <span>Services</span>
+        </div>
+
+
+        <form id="nexoraIntake" novalidate>
+
+          <!-- STEP 01 -->
+
+          <fieldset class="form-step active" data-step="0">
+
+            <legend>01 — Business identity</legend>
+
+            <p class="step-description">
+              First, let's establish who we're speaking with.
+            </p>
+
+            <div class="field-group">
+
+              <label for="clientName">Full name <span>*</span></label>
+
+              <input
+                type="text"
+                id="clientName"
+                name="name"
+                placeholder="Your full name"
+                autocomplete="name"
+                minlength="2"
+                required>
+
+            </div>
+
+
+            <div class="field-grid">
+
+              <div class="field-group">
+
+                <label for="email">Business email <span>*</span></label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@company.com"
+                  autocomplete="email"
+                  required>
+
+              </div>
+
+              <div class="field-group">
+
+                <label for="phone">Phone number</label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+27 00 000 0000"
+                  autocomplete="tel">
+
+              </div>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="businessName">Business / brand name <span>*</span></label>
+
+              <input
+                type="text"
+                id="businessName"
+                name="business"
+                placeholder="Your business name"
+                minlength="2"
+                required>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="website">Website or social media link</label>
+
+              <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://www.example.com">
+
+              <small>Optional — share an existing digital presence.</small>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- STEP 02 -->
+
+          <fieldset class="form-step" data-step="1" hidden>
+
+            <legend>02 — Business overview</legend>
+
+            <p class="step-description">
+              Help us understand your business environment.
+            </p>
+
+
+            <div class="field-group">
+
+              <label for="industry">Which industry best describes your business? <span>*</span></label>
+
+              <select id="industry" name="industry" required>
+
+                <option value="">Select your industry</option>
+                <option value="Technology & Software">Technology & Software</option>
+                <option value="Professional Services">Professional Services</option>
+                <option value="E-commerce & Retail">E-commerce & Retail</option>
+                <option value="Real Estate & Property">Real Estate & Property</option>
+                <option value="Education & Coaching">Education & Coaching</option>
+                <option value="Health & Wellness">Health & Wellness</option>
+                <option value="Beauty & Lifestyle">Beauty & Lifestyle</option>
+                <option value="Finance & Consulting">Finance & Consulting</option>
+                <option value="Construction & Engineering">Construction & Engineering</option>
+                <option value="Hospitality & Tourism">Hospitality & Tourism</option>
+                <option value="Other">Other</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="businessStage">What stage is your business currently at? <span>*</span></label>
+
+              <select id="businessStage" name="businessStage" required>
+
+                <option value="">Select your current stage</option>
+                <option value="Idea stage">Idea stage</option>
+                <option value="Newly established">Newly established</option>
+                <option value="Growing business">Growing business</option>
+                <option value="Established business">Established business</option>
+                <option value="Expanding operations">Expanding operations</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="teamSize">How large is your team?</label>
+
+              <select id="teamSize" name="teamSize">
+
+                <option value="">Select team size</option>
+                <option value="Just me">Just me</option>
+                <option value="2–5 people">2–5 people</option>
+                <option value="6–10 people">6–10 people</option>
+                <option value="11–25 people">11–25 people</option>
+                <option value="26–50 people">26–50 people</option>
+                <option value="50+ people">50+ people</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="location">Business location</label>
+
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="City and country">
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- STEP 03 -->
+
+          <fieldset class="form-step" data-step="2" hidden>
+
+            <legend>03 — Challenges and objectives</legend>
+
+            <p class="step-description">
+              What would meaningful progress look like for your business?
+            </p>
+
+
+            <div class="field-group">
+
+              <label>What are your biggest current challenges? <span>*</span></label>
+
+              <p class="field-hint">Select all that apply.</p>
+
+              <div class="choice-grid">
+
+                <label class="choice-card">
+                  <input type="checkbox" name="challenges" value="Generating quality leads">
+                  <span>Generating quality leads</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="challenges" value="Low conversion rates">
+                  <span>Low conversion rates</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="challenges" value="Weak digital presence">
+                  <span>Weak digital presence</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="challenges" value="Disconnected systems">
+                  <span>Disconnected systems</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="challenges" value="Unclear brand positioning">
+                  <span>Unclear brand positioning</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="challenges" value="Scaling operations">
+                  <span>Scaling operations</span>
+                </label>
+
+              </div>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="primaryGoal">What is your primary growth objective? <span>*</span></label>
+
+              <select id="primaryGoal" name="primaryGoal" required>
+
+                <option value="">Choose your main objective</option>
+                <option value="Generate more qualified leads">Generate more qualified leads</option>
+                <option value="Increase sales and conversions">Increase sales and conversions</option>
+                <option value="Strengthen digital presence">Strengthen digital presence</option>
+                <option value="Improve customer experience">Improve customer experience</option>
+                <option value="Automate business processes">Automate business processes</option>
+                <option value="Launch a new product or service">Launch a new product or service</option>
+                <option value="Scale business operations">Scale business operations</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="businessVision">Tell us more about what you want to achieve.</label>
+
+              <textarea
+                id="businessVision"
+                name="businessVision"
+                rows="4"
+                maxlength="1000"
+                placeholder="Describe your goals, priorities or current obstacles..."></textarea>
+
+              <small>Optional — up to 1,000 characters.</small>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- STEP 04 -->
+
+          <fieldset class="form-step" data-step="3" hidden>
+
+            <legend>04 — Your requirements</legend>
+
+            <p class="step-description">
+              Let's identify where NEXORA could add the most value.
+            </p>
+
+
+            <div class="field-group">
+
+              <label>Which services interest you? <span>*</span></label>
+
+              <p class="field-hint">Select all relevant services.</p>
+
+              <div class="choice-grid">
+
+                <label class="choice-card">
+                  <input type="checkbox" name="services" value="Business strategy">
+                  <span>Business strategy</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="services" value="Website and digital design">
+                  <span>Website and digital design</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="services" value="Lead generation funnels">
+                  <span>Lead generation funnels</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="services" value="Marketing and conversion systems">
+                  <span>Marketing and conversion systems</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="services" value="Workflow automation">
+                  <span>Workflow automation</span>
+                </label>
+
+                <label class="choice-card">
+                  <input type="checkbox" name="services" value="Digital transformation">
+                  <span>Digital transformation</span>
+                </label>
+
+              </div>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="investment">What investment range are you considering?</label>
+
+              <select id="investment" name="investment">
+
+                <option value="">Prefer to discuss</option>
+                <option value="Under $500">Under $500</option>
+                <option value="$500–$1,000">$500–$1,000</option>
+                <option value="$1,000–$3,000">$1,000–$3,000</option>
+                <option value="$3,000–$5,000">$3,000–$5,000</option>
+                <option value="$5,000+">$5,000+</option>
+                <option value="Not yet determined">Not yet determined</option>
+
+              </select>
+
+              <small>
+                This helps us understand project scope. It is not a commitment.
+              </small>
+
+            </div>
+
+
+            <div class="field-group">
+
+              <label for="timeline">When would you like to get started?</label>
+
+              <select id="timeline" name="timeline">
+
+                <option value="">Select a preferred timeframe</option>
+                <option value="Immediately">Immediately</option>
+                <option value="Within 2 weeks">Within 2 weeks</option>
+                <option value="Within a month">Within a month</option>
+                <option value="Within 3 months">Within 3 months</option>
+                <option value="Still exploring">Still exploring</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="consent-box">
+
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required>
+
+              <label for="consent">
+                I agree that NEXORA may use the information I provide
+                to respond to this business enquiry.
+                <span>*</span>
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- FORM FEEDBACK -->
+
+          <div
+            class="form-message"
+            id="formMessage"
+            role="alert"
+            aria-live="polite">
+          </div>
+
+
+          <!-- NAVIGATION BUTTONS -->
+
+          <div class="form-actions">
+
+            <button
+              type="button"
+              class="back-button"
+              id="backButton"
+              hidden>
+              ← Previous
+            </button>
+
+            <button
+              type="button"
+              class="next-button"
+              id="nextButton">
+              Continue <span>→</span>
+            </button>
+
+            <button
+              type="submit"
+              class="submit-button"
+              id="submitButton"
+              hidden>
+              Submit Business Profile <span>↗</span>
+            </button>
+
+          </div>
+
+          <p class="form-footer-note">
+            * Required fields. Your enquiry is a demonstration
+            until a live submission service is connected.
+          </p>
+
+        </form>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <footer class="discovery-footer">
+    <div class="container">
+      <span>© <span id="currentYear"></span> NEXORA</span>
+      <span>BUILT FOR WHAT'S NEXT.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

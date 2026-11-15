@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schedule your NEXORA business growth consultation.">
+  <meta name="theme-color" content="#101820">
+
+  <title>Book Your Consultation | NEXORA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="page-3.css">
+  <script src="page-3.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="booking-header">
+    <nav class="booking-nav container">
+
+      <a href="index.html" class="logo">
+        NEXORA<span>.</span>
+      </a>
+
+      <div class="booking-status">
+        <span class="status-dot"></span>
+        CONSULTATION SCHEDULING
+      </div>
+
+      <a href="page-2.html" class="back-link">
+        ← Edit Profile
+      </a>
+
+    </nav>
+  </header>
+
+
+  <main class="booking-main">
+
+    <div class="container">
+
+      <!-- INTRODUCTION -->
+
+      <section class="booking-intro">
+
+        <span class="section-label">YOUR GROWTH JOURNEY / 03</span>
+
+        <h1>
+          Let's make room
+          <span>for what's next.</span>
+        </h1>
+
+        <p>
+          Choose the consultation that best matches your objectives,
+          then select a preferred date and time.
+        </p>
+
+      </section>
+
+
+      <!-- MISSING PROFILE MESSAGE -->
+
+      <div class="profile-warning" id="profileWarning" hidden>
+
+        <div>
+          <h2>Your business profile is missing.</h2>
+          <p>
+            Please complete the business discovery form before
+            scheduling your consultation.
+          </p>
+          <a href="page-2.html" class="button primary-button">
+            Complete Business Profile ↗
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- BOOKING LAYOUT -->
+
+      <div class="booking-layout" id="bookingLayout">
+
+        <!-- MAIN BOOKING FORM -->
+
+        <section class="booking-form-panel">
+
+          <form id="bookingForm" novalidate>
+
+            <!-- CONSULTATION TYPE -->
+
+            <section class="booking-section">
+
+              <div class="booking-section-heading">
+                <span class="section-number">01</span>
+                <div>
+                  <h2>Select your consultation</h2>
+                  <p>Choose the conversation most relevant to your business.</p>
+                </div>
+              </div>
+
+
+              <div class="consultation-options">
+
+                <label class="consultation-card">
+
+                  <input
+                    type="radio"
+                    name="consultation"
+                    value="Growth Strategy Consultation"
+                    data-duration="45 minutes"
+                    required>
+
+                  <span class="consultation-content">
+
+                    <span class="consultation-top">
+                      <strong>Growth Strategy</strong>
+                      <span class="radio-indicator"></span>
+                    </span>
+
+                    <span class="consultation-description">
+                      Explore your business objectives,
+                      growth opportunities and strategic priorities.
+                    </span>
+
+                    <span class="consultation-duration">
+                      45 MINUTES
+                    </span>
+
+                  </span>
+
+                </label>
+
+
+                <label class="consultation-card">
+
+                  <input
+                    type="radio"
+                    name="consultation"
+                    value="Digital Transformation Consultation"
+                    data-duration="45 minutes">
+
+                  <span class="consultation-content">
+
+                    <span class="consultation-top">
+                      <strong>Digital Transformation</strong>
+                      <span class="radio-indicator"></span>
+                    </span>
+
+                    <span class="consultation-description">
+                      Discuss digital experiences, systems,
+                      automation and technology opportunities.
+                    </span>
+
+                    <span class="consultation-duration">
+                      45 MINUTES
+                    </span>
+
+                  </span>
+
+                </label>
+
+
+                <label class="consultation-card">
+
+                  <input
+                    type="radio"
+                    name="consultation"
+                    value="Lead Generation Consultation"
+                    data-duration="30 minutes">
+
+                  <span class="consultation-content">
+
+                    <span class="consultation-top">
+                      <strong>Lead Generation</strong>
+                      <span class="radio-indicator"></span>
+                    </span>
+
+                    <span class="consultation-description">
+                      Discuss acquisition strategies,
+                      conversion funnels and customer journeys.
+                    </span>
+
+                    <span class="consultation-duration">
+                      30 MINUTES
+                    </span>
+
+                  </span>
+
+                </label>
+
+              </div>
+
+            </section>
+
+
+            <!-- DATE AND TIME -->
+
+            <section class="booking-section">
+
+              <div class="booking-section-heading">
+                <span class="section-number">02</span>
+                <div>
+                  <h2>Choose your preferred date</h2>
+                  <p>Choose a date and select a demonstration time slot.</p>
+                </div>
+              </div>
+
+
+              <div class="field-group">
+
+                <label for="bookingDate">Preferred date <span>*</span></label>
+
+                <input
+                  type="date"
+                  id="bookingDate"
+                  name="bookingDate"
+                  required>
+
+                <small id="dateHint">
+                  Dates are displayed using your device's local timezone.
+                </small>
+
+              </div>
+
+
+              <div class="time-heading">
+                <label>Available demonstration times <span>*</span></label>
+                <span id="selectedDateLabel">Select a date first</span>
+              </div>
+
+
+              <div
+                class="time-slots"
+                id="timeSlots"
+                aria-live="polite">
+
+                <p class="empty-slots">
+                  Choose a date to view the demonstration slots.
+                </p>
+
+              </div>
+
+
+              <input
+                type="hidden"
+                name="bookingTime"
+                id="bookingTime">
+
+            </section>
+
+
+            <!-- ADDITIONAL NOTES -->
+
+            <section class="booking-section">
+
+              <div class="booking-section-heading">
+                <span class="section-number">03</span>
+                <div>
+                  <h2>Anything else we should know?</h2>
+                  <p>Optional details to help prepare for your conversation.</p>
+                </div>
+              </div>
+
+
+              <div class="field-group">
+
+                <label for="bookingNotes">Additional notes</label>
+
+                <textarea
+                  id="bookingNotes"
+                  name="bookingNotes"
+                  rows="4"
+                  maxlength="800"
+                  placeholder="Share anything important you'd like discussed..."></textarea>
+
+              </div>
+
+            </section>
+
+
+            <!-- FORM FEEDBACK -->
+
+            <div
+              class="booking-message"
+              id="bookingMessage"
+              role="alert"
+              aria-live="polite">
+            </div>
+
+
+            <!-- ACTION -->
+
+            <button type="submit" class="confirm-button" id="confirmButton">
+
+              Confirm Consultation <span>↗</span>
+
+            </button>
+
+            <p class="form-disclaimer">
+              This is a demonstration scheduling experience.
+              Your selection is not a confirmed real-world appointment.
+            </p>
+
+          </form>
+
+        </section>
+
+
+        <!-- SUMMARY SIDEBAR -->
+
+        <aside class="booking-summary">
+
+          <div class="summary-top">
+            <span class="section-label">BOOKING OVERVIEW</span>
+            <span class="summary-mark">N.</span>
+          </div>
+
+
+          <h2>Your consultation.</h2>
+
+          <p class="summary-description">
+            A focused conversation around your business
+            and its next stage of growth.
+          </p>
+
+
+          <div class="summary-divider"></div>
+
+
+          <div class="summary-detail">
+
+            <span>CLIENT</span>
+            <strong id="summaryName">Loading profile...</strong>
+
+          </div>
+
+
+          <div class="summary-detail">
+
+            <span>BUSINESS</span>
+            <strong id="summaryBusiness">—</strong>
+
+          </div>
+
+
+          <div class="summary-detail">
+
+            <span>CONSULTATION</span>
+            <strong id="summaryConsultation">Not selected</strong>
+
+          </div>
+
+
+          <div class="summary-detail">
+
+            <span>DATE</span>
+            <strong id="summaryDate">Not selected</strong>
+
+          </div>
+
+
+          <div class="summary-detail">
+
+            <span>TIME</span>
+            <strong id="summaryTime">Not selected</strong>
+
+          </div>
+
+
+          <div class="summary-divider"></div>
+
+
+          <div class="summary-footer">
+
+            <span class="summary-icon">✳</span>
+
+            <p>
+              Your business profile will accompany
+              your booking through the next stage.
+            </p>
+
+          </div>
+
+
+          <div class="summary-reference">
+            NEXORA / DISCOVERY 003
+          </div>
+
+        </aside>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="booking-footer">
+
+    <div class="container">
+
+      <span>© <span id="currentYear"></span> NEXORA</span>
+
+      <span>BUILT FOR WHAT'S NEXT.</span>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
